@@ -1,0 +1,481 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@700&display=swap');
+
+/*-------------------------------------
+        Global Style
+------------------------------------- */
+
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --raleway: 'Raleway', sans-serif;
+    --para-color: #6C6C6C;
+    --heading-color: #222222;
+    --text-white: #FFFFFF;
+    --button-color: #E02C6D;
+    --banner-color: #2D25A0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+    font-family: var(--poppins);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-white);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: var(--raleway);
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+p {
+    color: var(--para-color);
+}
+
+/*-------------------------------------
+        header style
+------------------------------------- */
+
+header {
+    background: var(--banner-color);
+}
+
+nav {
+    max-width: 1160px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.navbar, .banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    padding-top: 42px;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    display: none;
+    color: var(--text-white);
+    padding-top: 14px;
+}
+
+.menu-items a {
+    display: block;
+}
+
+.login-button{
+    margin-top: 10px;
+}
+
+.login-button a {
+    background: var(--button-color);
+    padding: 14px 24px 14px 27px;
+}
+
+.login-button a .fa-sign-in-alt {
+    margin-right: 12px;
+}
+
+.banner {
+    margin-top: 49px;
+    padding-bottom: 86px;
+    align-items: center;
+}
+
+
+.banner h1 {
+    color: var(--text-white);
+    width: 481px;
+}
+
+.link-button {
+    margin-top: 27px;
+}
+
+.link-button a {
+    background: var(--button-color);
+    padding: 10px 24px;
+}
+
+.link-button .fa-arrow-right {
+    margin-left: 8px;
+}
+
+.banner .banner-img img {
+    width: auto;
+    height: 438px;
+}
+
+/*-------------------------------------
+        players Style
+------------------------------------- */
+
+#players {
+    margin: 70px auto;
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player-container {
+    width: 330px;
+    height: auto;
+    padding: 15px 15px 33px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.payer-text h3 {
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.player-img img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*-------------------------------------
+        cricket team records style
+------------------------------------- */
+
+
+
+#winner-list {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    background: #111025;
+    text-align: center;
+    padding: 30px 50px;
+}
+
+#winner-list h1 {
+    color: var(--text-white);
+    margin: 20px 0;
+}
+
+.coustom {
+    margin: 0;
+}
+
+
+.win-list {
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid #262b47;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.win-list img {
+    max-width: 450px;
+    height: auto;
+}
+
+/*-------------------------------------
+        women-article style
+------------------------------------- */
+
+
+#container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 95px 0;
+}
+
+.women-article {
+    width: 466px;
+    height: auto;
+    padding-right: 69px;
+}
+
+.women-article h2 {
+    margin-bottom: 8px;
+}
+
+
+.women-img img {
+    width: 567px;
+    height: 427px;
+}
+
+/*-------------------------------------
+        Latest News style
+------------------------------------- */
+
+.latest-news {
+    display: flex;
+    justify-content: center;
+}
+
+.contents h2 {
+    margin-bottom: 40px;
+    padding-left: 14%;
+}
+
+.all-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news {
+    display: flex;
+    max-width: 450px;
+    /* max-width: 1280px; */
+    border: 1px solid #e7e7e7;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.mr40 {
+    margin-right: 40px;
+}
+
+.news-img, .news-info  {
+    width: 100%;
+    height: auto;
+}
+
+.news-img img {
+    width: 100%;
+}
+
+.news-info {
+    margin-left: 10px;
+}
+
+.news-info p {
+    margin: 10px 0;
+}
+
+.date-share {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-share-alt {
+    color: #857df1;
+    margin-right: 30px;
+}
+
+/*-------------------------------------
+        footer style
+------------------------------------- */
+
+footer {
+    margin: 63px 0;
+}
+.footer-container {
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 430px;
+    height: auto;
+}
+
+.footer-link i {
+    margin: 20px 0;
+    margin-right: 14px;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* ----------------------------
+        Medieas Quary
+-------------------------- */
+
+/* ----------------------------
+        Mobile Divice
+-------------------------- */
+
+@media only screen and (max-width: 668px) {
+
+    header {
+        width: 100%;
+        background: var(--banner-color);
+    }
+
+    .banner h1, .player-container {
+        width: 100%;
+    }
+
+    .banner, #players, #container-center  {
+        display: block;
+    }
+
+    nav, section, 
+    .latest-news  {
+        margin: 0 15px;
+    }
+
+    .menu-items {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+
+    }
+
+
+    .banner .banner-img img, 
+    .win-list img, 
+    .footer-logo ,
+    .news-img img, 
+    .women-img img, 
+    .women-article  {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner .banner-img img {
+        padding-top: 30px;
+    }
+
+    #winner-list {
+        padding: 0;
+    }
+
+
+    .news {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .mr40 {
+        margin-right: 0;
+    }
+
+    .contents {
+        margin: 0 15px;
+        max-width: 100%;
+
+    }
+
+    .news {
+        max-width: 100%;
+    }
+    
+    .contents h2 {
+        text-align: center;
+        padding: 0;
+    }
+
+    .women-article p {
+        padding: 40px 0;
+    }
+
+    .footer-logo img {
+        width: 100%;
+    }
+
+
+    #container-center  {
+        display: none;
+    }
+
+    /* .latest-news {
+        display: none;
+    } */
+
+    footer {
+        padding: 0 40px;
+
+    }
+    
+}
+
+/* ----------------------------
+        ipad Divice
+-------------------------- */
+
+@media only screen and (min-width: 669px) and (max-width: 992px) {
+    #players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #container-center  {
+        display: block;
+    }
+
+    .banner, #container-center  {
+        display: block;
+    }
+
+    .banner-img img {
+        margin-top: 60px;
+    }
+
+    /* .latest-news  {
+        display: none;
+    } */
+
+    .women-img img, .women-article {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    footer {
+        padding: 0 40px;
+
+    }
+
+    .mr40 {
+        margin-right: 0;
+    }
+}
